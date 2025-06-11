@@ -318,6 +318,80 @@
       "slug": "others"
     }
   ],
+  "transactions": [
+    {
+      "type": "Purchase",
+      "description": "Compra de bens ou serviços"
+    },
+    {
+      "type": "Refund",
+      "description": "Estorno ou devolução de compra"
+    },
+    {
+      "type": "CashAdvance",
+      "description": "Saque em caixa eletrônico ou adiantamento em dinheiro"
+    },
+    {
+      "type": "BalanceTransfer",
+      "description": "Transferência de saldo de outro cartão"
+    },
+    {
+      "type": "Fee",
+      "description": "Cobrança de tarifa (ex: anuidade, manutenção)"
+    },
+    {
+      "type": "Interest",
+      "description": "Juros cobrados sobre saldo não pago"
+    },
+    {
+      "type": "Payment",
+      "description": "Pagamento feito para o cartão de crédito"
+    },
+    {
+      "type": "ATMWithdrawal",
+      "description": "Saque em caixa eletrônico via ATM"
+    },
+    {
+      "type": "ForeignTransaction",
+      "description": "Compra ou saque internacional (variação cambial)"
+    },
+    {
+      "type": "OnlinePurchase",
+      "description": "Compra realizada via internet"
+    },
+    {
+      "type": "RecurringPayment",
+      "description": "Pagamento recorrente (assinaturas, serviços)"
+    },
+    {
+      "type": "PointRedemption",
+      "description": "Resgate de pontos ou recompensas"
+    },
+    {
+      "type": "OverLimitFee",
+      "description": "Tarifa por ultrapassar o limite de crédito"
+    },
+    {
+      "type": "LatePaymentFee",
+      "description": "Tarifa por pagamento em atraso"
+    },
+    {
+      "type": "Chargeback",
+      "description": "Contestação de compra/saldo estornado pelo emissor"
+    },
+    {
+      "type": "InstallmentPurchase",
+      "description": "Compra parcelada (juros ou sem juros)"
+    },
+    {
+      "type": "Adjustment",
+      "description": "Ajustes diversos (correções) na fatura"
+    },
+    {
+      "type": "Cashback",
+      "description": "Recompensa em dinheiro creditada ao cliente"
+    }
+  ], 
   "mcc": [
     {
       "mcc": 1711,

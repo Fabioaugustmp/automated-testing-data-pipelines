@@ -6,6 +6,8 @@ Esta API fornece acesso a dados estruturados relacionados a transações comerci
 
 /categories – Agrupamentos temáticos dos MCCs em categorias amplas como Varejo, Saúde, Serviços, etc.
 
+/transactions – Informações tipos de transações comerciais (Ex: compras, saques).
+
 /regions – Informações sobre regiões geográficas (ex: estados dos EUA), incluindo siglas e nomes.
 
 Ideal para sistemas de análise financeira, categorização de transações e enriquecimento de dados
