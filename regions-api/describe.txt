@@ -1,0 +1,11 @@
+📦 API de Dados Comerciais
+
+Esta API fornece acesso a dados estruturados relacionados a transações comerciais e regionais. Os principais endpoints disponíveis são:
+
+/mcc – Lista e detalha os Merchant Category Codes (MCC), usados para classificar estabelecimentos por tipo de atividade comercial.
+
+/categories – Agrupamentos temáticos dos MCCs em categorias amplas como Varejo, Saúde, Serviços, etc.
+
+/regions – Informações sobre regiões geográficas (ex: estados dos EUA), incluindo siglas e nomes.
+
+Ideal para sistemas de análise financeira, categorização de transações e enriquecimento de dados

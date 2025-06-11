@@ -1,0 +1,759 @@
+{
+  "regions": [
+    {
+      "id": 1,
+      "code": "AL",
+      "name": "Alabama"
+    },
+    {
+      "id": 2,
+      "code": "AK",
+      "name": "Alaska"
+    },
+    {
+      "id": 3,
+      "code": "AZ",
+      "name": "Arizona"
+    },
+    {
+      "id": 4,
+      "code": "AR",
+      "name": "Arkansas"
+    },
+    {
+      "id": 5,
+      "code": "CA",
+      "name": "California"
+    },
+    {
+      "id": 6,
+      "code": "CO",
+      "name": "Colorado"
+    },
+    {
+      "id": 7,
+      "code": "CT",
+      "name": "Connecticut"
+    },
+    {
+      "id": 8,
+      "code": "DE",
+      "name": "Delaware"
+    },
+    {
+      "id": 9,
+      "code": "FL",
+      "name": "Florida"
+    },
+    {
+      "id": 10,
+      "code": "GA",
+      "name": "Georgia"
+    },
+    {
+      "id": 11,
+      "code": "HI",
+      "name": "Hawaii"
+    },
+    {
+      "id": 12,
+      "code": "ID",
+      "name": "Idaho"
+    },
+    {
+      "id": 13,
+      "code": "IL",
+      "name": "Illinois"
+    },
+    {
+      "id": 14,
+      "code": "IN",
+      "name": "Indiana"
+    },
+    {
+      "id": 15,
+      "code": "IA",
+      "name": "Iowa"
+    },
+    {
+      "id": 16,
+      "code": "KS",
+      "name": "Kansas"
+    },
+    {
+      "id": 17,
+      "code": "KY",
+      "name": "Kentucky"
+    },
+    {
+      "id": 18,
+      "code": "LA",
+      "name": "Louisiana"
+    },
+    {
+      "id": 19,
+      "code": "ME",
+      "name": "Maine"
+    },
+    {
+      "id": 20,
+      "code": "MD",
+      "name": "Maryland"
+    },
+    {
+      "id": 21,
+      "code": "MA",
+      "name": "Massachusetts"
+    },
+    {
+      "id": 22,
+      "code": "MI",
+      "name": "Michigan"
+    },
+    {
+      "id": 23,
+      "code": "MN",
+      "name": "Minnesota"
+    },
+    {
+      "id": 24,
+      "code": "MS",
+      "name": "Mississippi"
+    },
+    {
+      "id": 25,
+      "code": "MO",
+      "name": "Missouri"
+    },
+    {
+      "id": 26,
+      "code": "MT",
+      "name": "Montana"
+    },
+    {
+      "id": 27,
+      "code": "NE",
+      "name": "Nebraska"
+    },
+    {
+      "id": 28,
+      "code": "NV",
+      "name": "Nevada"
+    },
+    {
+      "id": 29,
+      "code": "NH",
+      "name": "New Hampshire"
+    },
+    {
+      "id": 30,
+      "code": "NJ",
+      "name": "New Jersey"
+    },
+    {
+      "id": 31,
+      "code": "NM",
+      "name": "New Mexico"
+    },
+    {
+      "id": 32,
+      "code": "NY",
+      "name": "New York"
+    },
+    {
+      "id": 33,
+      "code": "NC",
+      "name": "North Carolina"
+    },
+    {
+      "id": 34,
+      "code": "ND",
+      "name": "North Dakota"
+    },
+    {
+      "id": 35,
+      "code": "OH",
+      "name": "Ohio"
+    },
+    {
+      "id": 36,
+      "code": "OK",
+      "name": "Oklahoma"
+    },
+    {
+      "id": 37,
+      "code": "OR",
+      "name": "Oregon"
+    },
+    {
+      "id": 38,
+      "code": "PA",
+      "name": "Pennsylvania"
+    },
+    {
+      "id": 39,
+      "code": "RI",
+      "name": "Rhode Island"
+    },
+    {
+      "id": 40,
+      "code": "SC",
+      "name": "South Carolina"
+    },
+    {
+      "id": 41,
+      "code": "SD",
+      "name": "South Dakota"
+    },
+    {
+      "id": 42,
+      "code": "TN",
+      "name": "Tennessee"
+    },
+    {
+      "id": 43,
+      "code": "TX",
+      "name": "Texas"
+    },
+    {
+      "id": 44,
+      "code": "UT",
+      "name": "Utah"
+    },
+    {
+      "id": 45,
+      "code": "VT",
+      "name": "Vermont"
+    },
+    {
+      "id": 46,
+      "code": "VA",
+      "name": "Virginia"
+    },
+    {
+      "id": 47,
+      "code": "WA",
+      "name": "Washington"
+    },
+    {
+      "id": 48,
+      "code": "WV",
+      "name": "West Virginia"
+    },
+    {
+      "id": 49,
+      "code": "WI",
+      "name": "Wisconsin"
+    },
+    {
+      "id": 50,
+      "code": "WY",
+      "name": "Wyoming"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Manufacturing & Metalwork",
+      "slug": "manufacturing-metalwork"
+    },
+    {
+      "id": 2,
+      "name": "Construction & Building",
+      "slug": "construction-building"
+    },
+    {
+      "id": 3,
+      "name": "Wholesale & Distribution",
+      "slug": "wholesale-distribution"
+    },
+    {
+      "id": 4,
+      "name": "Retail & Stores",
+      "slug": "retail-stores"
+    },
+    {
+      "id": 5,
+      "name": "Utilities",
+      "slug": "utilities"
+    },
+    {
+      "id": 6,
+      "name": "Technology & Telecom",
+      "slug": "technology-telecom"
+    },
+    {
+      "id": 7,
+      "name": "Transportation & Travel",
+      "slug": "transportation-travel"
+    },
+    {
+      "id": 8,
+      "name": "Food & Beverage",
+      "slug": "food-beverage"
+    },
+    {
+      "id": 9,
+      "name": "Professional Services",
+      "slug": "professional-services"
+    },
+    {
+      "id": 10,
+      "name": "Personal Services",
+      "slug": "personal-services"
+    },
+    {
+      "id": 11,
+      "name": "Entertainment & Leisure",
+      "slug": "entertainment-leisure"
+    },
+    {
+      "id": 12,
+      "name": "Healthcare",
+      "slug": "healthcare"
+    },
+    {
+      "id": 13,
+      "name": "Others ",
+      "slug": "others"
+    }
+  ],
+  "mcc": [
+    {
+      "mcc": 1711,
+      "descripton": "Heating, Plumbing, Air Conditioning Contractors"
+    },
+    {
+      "mcc": 3000,
+      "descripton": "Steelworks"
+    },
+    {
+      "mcc": 3001,
+      "descripton": "Steel Products Manufacturing"
+    },
+    {
+      "mcc": 3005,
+      "descripton": "Miscellaneous Metal Fabrication"
+    },
+    {
+      "mcc": 3006,
+      "descripton": "Miscellaneous Fabricated Metal Products"
+    },
+    {
+      "mcc": 3007,
+      "descripton": "Coated and Laminated Products"
+    },
+    {
+      "mcc": 3008,
+      "descripton": "Steel Drums and Barrels"
+    },
+    {
+      "mcc": 3009,
+      "descripton": "Fabricated Structural Metal Products"
+    },
+    {
+      "mcc": 3058,
+      "descripton": "Tools, Parts, Supplies Manufacturing"
+    },
+    {
+      "mcc": 3066,
+      "descripton": "Miscellaneous Metals"
+    },
+    {
+      "mcc": 3075,
+      "descripton": "Bolt, Nut, Screw, Rivet Manufacturing"
+    },
+    {
+      "mcc": 3132,
+      "descripton": "Leather Goods"
+    },
+    {
+      "mcc": 3144,
+      "descripton": "Floor Covering Stores"
+    },
+    {
+      "mcc": 3174,
+      "descripton": "Upholstery and Drapery Stores"
+    },
+    {
+      "mcc": 3256,
+      "descripton": "Brick, Stone, and Related Materials"
+    },
+    {
+      "mcc": 3260,
+      "descripton": "Pottery and Ceramics"
+    },
+    {
+      "mcc": 3359,
+      "descripton": "Non-Ferrous Metal Foundries"
+    },
+    {
+      "mcc": 3387,
+      "descripton": "Electroplating, Plating, Polishing Services"
+    },
+    {
+      "mcc": 3389,
+      "descripton": "Non-Precious Metal Services"
+    },
+    {
+      "mcc": 3390,
+      "descripton": "Miscellaneous Metalwork"
+    },
+    {
+      "mcc": 3393,
+      "descripton": "Heat Treating Metal Services"
+    },
+    {
+      "mcc": 3395,
+      "descripton": "Welding Repair"
+    },
+    {
+      "mcc": 3405,
+      "descripton": "Ironwork"
+    },
+    {
+      "mcc": 3504,
+      "descripton": "Gardening Supplies"
+    },
+    {
+      "mcc": 3509,
+      "descripton": "Industrial Equipment and Supplies"
+    },
+    {
+      "mcc": 3596,
+      "descripton": "Miscellaneous Machinery and Parts Manufacturing"
+    },
+    {
+      "mcc": 3640,
+      "descripton": "Lighting, Fixtures, Electrical Supplies"
+    },
+    {
+      "mcc": 3684,
+      "descripton": "Semiconductors and Related Devices"
+    },
+    {
+      "mcc": 3722,
+      "descripton": "Passenger Railways"
+    },
+    {
+      "mcc": 3730,
+      "descripton": "Ship Chandlers"
+    },
+    {
+      "mcc": 3771,
+      "descripton": "Railroad Passenger Transport"
+    },
+    {
+      "mcc": 3775,
+      "descripton": "Railroad Freight"
+    },
+    {
+      "mcc": 3780,
+      "descripton": "Computer Network Services"
+    },
+    {
+      "mcc": 4111,
+      "descripton": "Local and Suburban Commuter Transportation"
+    },
+    {
+      "mcc": 4112,
+      "descripton": "Passenger Railways"
+    },
+    {
+      "mcc": 4121,
+      "descripton": "Taxicabs and Limousines"
+    },
+    {
+      "mcc": 4131,
+      "descripton": "Bus Lines"
+    },
+    {
+      "mcc": 4214,
+      "descripton": "Motor Freight Carriers and Trucking"
+    },
+    {
+      "mcc": 4411,
+      "descripton": "Cruise Lines"
+    },
+    {
+      "mcc": 4511,
+      "descripton": "Airlines"
+    },
+    {
+      "mcc": 4722,
+      "descripton": "Travel Agencies"
+    },
+    {
+      "mcc": 4784,
+      "descripton": "Tolls and Bridge Fees"
+    },
+    {
+      "mcc": 4814,
+      "descripton": "Telecommunication Services"
+    },
+    {
+      "mcc": 4829,
+      "descripton": "Money Transfer"
+    },
+    {
+      "mcc": 4899,
+      "descripton": "Cable, Satellite, and Other Pay Television Services"
+    },
+    {
+      "mcc": 4900,
+      "descripton": "Utilities - Electric, Gas, Water, Sanitary"
+    },
+    {
+      "mcc": 5045,
+      "descripton": "Computers, Computer Peripheral Equipment"
+    },
+    {
+      "mcc": 5094,
+      "descripton": "Precious Stones and Metals"
+    },
+    {
+      "mcc": 5192,
+      "descripton": "Books, Periodicals, Newspapers"
+    },
+    {
+      "mcc": 5193,
+      "descripton": "Florists Supplies, Nursery Stock and Flowers"
+    },
+    {
+      "mcc": 5211,
+      "descripton": "Lumber and Building Materials"
+    },
+    {
+      "mcc": 5251,
+      "descripton": "Hardware Stores"
+    },
+    {
+      "mcc": 5261,
+      "descripton": "Lawn and Garden Supply Stores"
+    },
+    {
+      "mcc": 5300,
+      "descripton": "Wholesale Clubs"
+    },
+    {
+      "mcc": 5310,
+      "descripton": "Discount Stores"
+    },
+    {
+      "mcc": 5311,
+      "descripton": "Department Stores"
+    },
+    {
+      "mcc": 5411,
+      "descripton": "Grocery Stores, Supermarkets"
+    },
+    {
+      "mcc": 5499,
+      "descripton": "Miscellaneous Food Stores"
+    },
+    {
+      "mcc": 5533,
+      "descripton": "Automotive Parts and Accessories Stores"
+    },
+    {
+      "mcc": 5541,
+      "descripton": "Service Stations"
+    },
+    {
+      "mcc": 5621,
+      "descripton": "Women's Ready-To-Wear Stores"
+    },
+    {
+      "mcc": 5651,
+      "descripton": "Family Clothing Stores"
+    },
+    {
+      "mcc": 5655,
+      "descripton": "Sports Apparel, Riding Apparel Stores"
+    },
+    {
+      "mcc": 5661,
+      "descripton": "Shoe Stores"
+    },
+    {
+      "mcc": 5712,
+      "descripton": "Furniture, Home Furnishings, and Equipment Stores"
+    },
+    {
+      "mcc": 5719,
+      "descripton": "Miscellaneous Home Furnishing Stores"
+    },
+    {
+      "mcc": 5722,
+      "descripton": "Household Appliance Stores"
+    },
+    {
+      "mcc": 5732,
+      "descripton": "Electronics Stores"
+    },
+    {
+      "mcc": 5733,
+      "descripton": "Music Stores - Musical Instruments"
+    },
+    {
+      "mcc": 5812,
+      "descripton": "Eating Places and Restaurants"
+    },
+    {
+      "mcc": 5813,
+      "descripton": "Drinking Places (Alcoholic Beverages)"
+    },
+    {
+      "mcc": 5814,
+      "descripton": "Fast Food Restaurants"
+    },
+    {
+      "mcc": 5815,
+      "descripton": "Digital Goods - Media, Books, Apps"
+    },
+    {
+      "mcc": 5816,
+      "descripton": "Digital Goods - Games"
+    },
+    {
+      "mcc": 5912,
+      "descripton": "Drug Stores and Pharmacies"
+    },
+    {
+      "mcc": 5921,
+      "descripton": "Package Stores, Beer, Wine, Liquor"
+    },
+    {
+      "mcc": 5932,
+      "descripton": "Antique Shops"
+    },
+    {
+      "mcc": 5941,
+      "descripton": "Sporting Goods Stores"
+    },
+    {
+      "mcc": 5942,
+      "descripton": "Book Stores"
+    },
+    {
+      "mcc": 5947,
+      "descripton": "Gift, Card, Novelty Stores"
+    },
+    {
+      "mcc": 5970,
+      "descripton": "Artist Supply Stores, Craft Shops"
+    },
+    {
+      "mcc": 5977,
+      "descripton": "Cosmetic Stores"
+    },
+    {
+      "mcc": 6300,
+      "descripton": "Insurance Sales, Underwriting"
+    },
+    {
+      "mcc": 7011,
+      "descripton": "Lodging - Hotels, Motels, Resorts"
+    },
+    {
+      "mcc": 7210,
+      "descripton": "Laundry Services"
+    },
+    {
+      "mcc": 7230,
+      "descripton": "Beauty and Barber Shops"
+    },
+    {
+      "mcc": 7276,
+      "descripton": "Tax Preparation Services"
+    },
+    {
+      "mcc": 7349,
+      "descripton": "Cleaning and Maintenance Services"
+    },
+    {
+      "mcc": 7393,
+      "descripton": "Detective Agencies, Security Services"
+    },
+    {
+      "mcc": 7531,
+      "descripton": "Automotive Body Repair Shops"
+    },
+    {
+      "mcc": 7538,
+      "descripton": "Automotive Service Shops"
+    },
+    {
+      "mcc": 7542,
+      "descripton": "Car Washes"
+    },
+    {
+      "mcc": 7549,
+      "descripton": "Towing Services"
+    },
+    {
+      "mcc": 7801,
+      "descripton": "Athletic Fields, Commercial Sports"
+    },
+    {
+      "mcc": 7802,
+      "descripton": "Recreational Sports, Clubs"
+    },
+    {
+      "mcc": 7832,
+      "descripton": "Motion Picture Theaters"
+    },
+    {
+      "mcc": 7922,
+      "descripton": "Theatrical Producers"
+    },
+    {
+      "mcc": 7995,
+      "descripton": "Betting (including Lottery Tickets, Casinos)"
+    },
+    {
+      "mcc": 7996,
+      "descripton": "Amusement Parks, Carnivals, Circuses"
+    },
+    {
+      "mcc": 8011,
+      "descripton": "Doctors, Physicians"
+    },
+    {
+      "mcc": 8021,
+      "descripton": "Dentists and Orthodontists"
+    },
+    {
+      "mcc": 8041,
+      "descripton": "Chiropractors"
+    },
+    {
+      "mcc": 8043,
+      "descripton": "Optometrists, Optical Goods and Eyeglasses"
+    },
+    {
+      "mcc": 8049,
+      "descripton": "Podiatrists"
+    },
+    {
+      "mcc": 8062,
+      "descripton": "Hospitals"
+    },
+    {
+      "mcc": 8099,
+      "descripton": "Medical Services"
+    },
+    {
+      "mcc": 8111,
+      "descripton": "Legal Services and Attorneys"
+    },
+    {
+      "mcc": 8931,
+      "descripton": "Accounting, Auditing, and Bookkeeping Services"
+    },
+    {
+      "mcc": 9402,
+      "descripton": "Postal Services - Government Only"
+    }
+  ]
+}
