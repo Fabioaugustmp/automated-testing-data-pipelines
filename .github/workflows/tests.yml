@@ -28,8 +28,7 @@ jobs:
         run: |
           pytest -v --tb=short
 
-      # Optional: Coverage report
-      # - name: 📊 Run tests with coverage
-      #   run: |
-      #     pip install pytest-cov
-      #     pytest --cov=. --cov-report=term-missing
+      - name: 📊 Run tests with coverage
+        run: |
+         pip install pytest-cov
+         pytest --cov=. --cov-report=term-missing
