@@ -1,0 +1,438 @@
+[
+  {
+    "code": 1711,
+    "description": "Heating, Plumbing, Air Conditioning Contractors"
+  },
+  {
+    "code": 3000,
+    "description": "Steelworks"
+  },
+  {
+    "code": 3001,
+    "description": "Steel Products Manufacturing"
+  },
+  {
+    "code": 3005,
+    "description": "Miscellaneous Metal Fabrication"
+  },
+  {
+    "code": 3006,
+    "description": "Miscellaneous Fabricated Metal Products"
+  },
+  {
+    "code": 3007,
+    "description": "Coated and Laminated Products"
+  },
+  {
+    "code": 3008,
+    "description": "Steel Drums and Barrels"
+  },
+  {
+    "code": 3009,
+    "description": "Fabricated Structural Metal Products"
+  },
+  {
+    "code": 3058,
+    "description": "Tools, Parts, Supplies Manufacturing"
+  },
+  {
+    "code": 3066,
+    "description": "Miscellaneous Metals"
+  },
+  {
+    "code": 3075,
+    "description": "Bolt, Nut, Screw, Rivet Manufacturing"
+  },
+  {
+    "code": 3132,
+    "description": "Leather Goods"
+  },
+  {
+    "code": 3144,
+    "description": "Floor Covering Stores"
+  },
+  {
+    "code": 3174,
+    "description": "Upholstery and Drapery Stores"
+  },
+  {
+    "code": 3256,
+    "description": "Brick, Stone, and Related Materials"
+  },
+  {
+    "code": 3260,
+    "description": "Pottery and Ceramics"
+  },
+  {
+    "code": 3359,
+    "description": "Non-Ferrous Metal Foundries"
+  },
+  {
+    "code": 3387,
+    "description": "Electroplating, Plating, Polishing Services"
+  },
+  {
+    "code": 3389,
+    "description": "Non-Precious Metal Services"
+  },
+  {
+    "code": 3390,
+    "description": "Miscellaneous Metalwork"
+  },
+  {
+    "code": 3393,
+    "description": "Heat Treating Metal Services"
+  },
+  {
+    "code": 3395,
+    "description": "Welding Repair"
+  },
+  {
+    "code": 3405,
+    "description": "Ironwork"
+  },
+  {
+    "code": 3504,
+    "description": "Gardening Supplies"
+  },
+  {
+    "code": 3509,
+    "description": "Industrial Equipment and Supplies"
+  },
+  {
+    "code": 3596,
+    "description": "Miscellaneous Machinery and Parts Manufacturing"
+  },
+  {
+    "code": 3640,
+    "description": "Lighting, Fixtures, Electrical Supplies"
+  },
+  {
+    "code": 3684,
+    "description": "Semiconductors and Related Devices"
+  },
+  {
+    "code": 3722,
+    "description": "Passenger Railways"
+  },
+  {
+    "code": 3730,
+    "description": "Ship Chandlers"
+  },
+  {
+    "code": 3771,
+    "description": "Railroad Passenger Transport"
+  },
+  {
+    "code": 3775,
+    "description": "Railroad Freight"
+  },
+  {
+    "code": 3780,
+    "description": "Computer Network Services"
+  },
+  {
+    "code": 4111,
+    "description": "Local and Suburban Commuter Transportation"
+  },
+  {
+    "code": 4112,
+    "description": "Passenger Railways"
+  },
+  {
+    "code": 4121,
+    "description": "Taxicabs and Limousines"
+  },
+  {
+    "code": 4131,
+    "description": "Bus Lines"
+  },
+  {
+    "code": 4214,
+    "description": "Motor Freight Carriers and Trucking"
+  },
+  {
+    "code": 4411,
+    "description": "Cruise Lines"
+  },
+  {
+    "code": 4511,
+    "description": "Airlines"
+  },
+  {
+    "code": 4722,
+    "description": "Travel Agencies"
+  },
+  {
+    "code": 4784,
+    "description": "Tolls and Bridge Fees"
+  },
+  {
+    "code": 4814,
+    "description": "Telecommunication Services"
+  },
+  {
+    "code": 4829,
+    "description": "Money Transfer"
+  },
+  {
+    "code": 4899,
+    "description": "Cable, Satellite, and Other Pay Television Services"
+  },
+  {
+    "code": 4900,
+    "description": "Utilities - Electric, Gas, Water, Sanitary"
+  },
+  {
+    "code": 5045,
+    "description": "Computers, Computer Peripheral Equipment"
+  },
+  {
+    "code": 5094,
+    "description": "Precious Stones and Metals"
+  },
+  {
+    "code": 5192,
+    "description": "Books, Periodicals, Newspapers"
+  },
+  {
+    "code": 5193,
+    "description": "Florists Supplies, Nursery Stock and Flowers"
+  },
+  {
+    "code": 5211,
+    "description": "Lumber and Building Materials"
+  },
+  {
+    "code": 5251,
+    "description": "Hardware Stores"
+  },
+  {
+    "code": 5261,
+    "description": "Lawn and Garden Supply Stores"
+  },
+  {
+    "code": 5300,
+    "description": "Wholesale Clubs"
+  },
+  {
+    "code": 5310,
+    "description": "Discount Stores"
+  },
+  {
+    "code": 5311,
+    "description": "Department Stores"
+  },
+  {
+    "code": 5411,
+    "description": "Grocery Stores, Supermarkets"
+  },
+  {
+    "code": 5499,
+    "description": "Miscellaneous Food Stores"
+  },
+  {
+    "code": 5533,
+    "description": "Automotive Parts and Accessories Stores"
+  },
+  {
+    "code": 5541,
+    "description": "Service Stations"
+  },
+  {
+    "code": 5621,
+    "description": "Women's Ready-To-Wear Stores"
+  },
+  {
+    "code": 5651,
+    "description": "Family Clothing Stores"
+  },
+  {
+    "code": 5655,
+    "description": "Sports Apparel, Riding Apparel Stores"
+  },
+  {
+    "code": 5661,
+    "description": "Shoe Stores"
+  },
+  {
+    "code": 5712,
+    "description": "Furniture, Home Furnishings, and Equipment Stores"
+  },
+  {
+    "code": 5719,
+    "description": "Miscellaneous Home Furnishing Stores"
+  },
+  {
+    "code": 5722,
+    "description": "Household Appliance Stores"
+  },
+  {
+    "code": 5732,
+    "description": "Electronics Stores"
+  },
+  {
+    "code": 5733,
+    "description": "Music Stores - Musical Instruments"
+  },
+  {
+    "code": 5812,
+    "description": "Eating Places and Restaurants"
+  },
+  {
+    "code": 5813,
+    "description": "Drinking Places (Alcoholic Beverages)"
+  },
+  {
+    "code": 5814,
+    "description": "Fast Food Restaurants"
+  },
+  {
+    "code": 5815,
+    "description": "Digital Goods - Media, Books, Apps"
+  },
+  {
+    "code": 5816,
+    "description": "Digital Goods - Games"
+  },
+  {
+    "code": 5912,
+    "description": "Drug Stores and Pharmacies"
+  },
+  {
+    "code": 5921,
+    "description": "Package Stores, Beer, Wine, Liquor"
+  },
+  {
+    "code": 5932,
+    "description": "Antique Shops"
+  },
+  {
+    "code": 5941,
+    "description": "Sporting Goods Stores"
+  },
+  {
+    "code": 5942,
+    "description": "Book Stores"
+  },
+  {
+    "code": 5947,
+    "description": "Gift, Card, Novelty Stores"
+  },
+  {
+    "code": 5970,
+    "description": "Artist Supply Stores, Craft Shops"
+  },
+  {
+    "code": 5977,
+    "description": "Cosmetic Stores"
+  },
+  {
+    "code": 6300,
+    "description": "Insurance Sales, Underwriting"
+  },
+  {
+    "code": 7011,
+    "description": "Lodging - Hotels, Motels, Resorts"
+  },
+  {
+    "code": 7210,
+    "description": "Laundry Services"
+  },
+  {
+    "code": 7230,
+    "description": "Beauty and Barber Shops"
+  },
+  {
+    "code": 7276,
+    "description": "Tax Preparation Services"
+  },
+  {
+    "code": 7349,
+    "description": "Cleaning and Maintenance Services"
+  },
+  {
+    "code": 7393,
+    "description": "Detective Agencies, Security Services"
+  },
+  {
+    "code": 7531,
+    "description": "Automotive Body Repair Shops"
+  },
+  {
+    "code": 7538,
+    "description": "Automotive Service Shops"
+  },
+  {
+    "code": 7542,
+    "description": "Car Washes"
+  },
+  {
+    "code": 7549,
+    "description": "Towing Services"
+  },
+  {
+    "code": 7801,
+    "description": "Athletic Fields, Commercial Sports"
+  },
+  {
+    "code": 7802,
+    "description": "Recreational Sports, Clubs"
+  },
+  {
+    "code": 7832,
+    "description": "Motion Picture Theaters"
+  },
+  {
+    "code": 7922,
+    "description": "Theatrical Producers"
+  },
+  {
+    "code": 7995,
+    "description": "Betting (including Lottery Tickets, Casinos)"
+  },
+  {
+    "code": 7996,
+    "description": "Amusement Parks, Carnivals, Circuses"
+  },
+  {
+    "code": 8011,
+    "description": "Doctors, Physicians"
+  },
+  {
+    "code": 8021,
+    "description": "Dentists and Orthodontists"
+  },
+  {
+    "code": 8041,
+    "description": "Chiropractors"
+  },
+  {
+    "code": 8043,
+    "description": "Optometrists, Optical Goods and Eyeglasses"
+  },
+  {
+    "code": 8049,
+    "description": "Podiatrists"
+  },
+  {
+    "code": 8062,
+    "description": "Hospitals"
+  },
+  {
+    "code": 8099,
+    "description": "Medical Services"
+  },
+  {
+    "code": 8111,
+    "description": "Legal Services and Attorneys"
+  },
+  {
+    "code": 8931,
+    "description": "Accounting, Auditing, and Bookkeeping Services"
+  },
+  {
+    "code": 9402,
+    "description": "Postal Services - Government Only"
+  }
+]
