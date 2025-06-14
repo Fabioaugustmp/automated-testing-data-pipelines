@@ -96,10 +96,9 @@ def get_all_mcc_codes():
 
 
 @app.get("/mcc/{code}", response_model=MccEntry, tags=["MCC"])
-def get_mcc_by_code(code: str):
+def get_mcc_by_code(code: int):
     """
     Retrieves the description for a specific Merchant Category Code (MCC).
-
     - **code**: The 4-digit MCC to look up.
     """
     if mcc_data is None:
@@ -108,8 +107,7 @@ def get_mcc_by_code(code: str):
             detail="MCC data not loaded. Please check application logs for errors."
         )
 
-    # Search for the MCC code (case-insensitive for robustness, though MCCs are usually uppercase)
-    found_mcc = next((mcc for mcc in mcc_data if mcc.code.lower() == code.lower()), None)
+    found_mcc = next((mcc for mcc in mcc_data if mcc.code == code), None)
 
     if found_mcc:
         return found_mcc
