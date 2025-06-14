@@ -12,5 +12,5 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# Include API routers
+# Include all API routers
 app.include_router(transaction.router)
