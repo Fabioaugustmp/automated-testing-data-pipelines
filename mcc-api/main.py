@@ -1,11 +1,8 @@
-# main.py
 import json
 from typing import List, Optional
 from fastapi import FastAPI, HTTPException, status
 from pydantic import BaseModel, Field
 
-
-# --- Pydantic Schema for MCC data ---
 class MccEntry(BaseModel):
     """
     Pydantic model to define the structure of each MCC entry.
@@ -13,11 +10,8 @@ class MccEntry(BaseModel):
     code: int = Field(..., example="5812", description="Merchant Category Code")
     description: str = Field(..., example="Eating Places, Restaurants", description="Description of the MCC")
 
-# --- Global variable to store loaded MCC data ---
-# This will hold the parsed JSON data once loaded.
 mcc_data: Optional[List[MccEntry]] = None
 
-# --- Function to load MCC data from JSON file ---
 def load_mcc_data(file_path: str = "mcc.json") -> List[MccEntry]:
     """
     Loads MCC data from a specified JSON file.
@@ -59,16 +53,12 @@ def load_mcc_data(file_path: str = "mcc.json") -> List[MccEntry]:
             detail=f"An unexpected error occurred while loading MCC data: {e}"
         )
 
-
-# --- FastAPI Application Instance ---
 app = FastAPI(
     title="MCC Lookup API",
     description="A simple API to retrieve Merchant Category Codes from a JSON file.",
     version="1.0.0"
 )
 
-
-# --- Event Handler to load data on application startup ---
 @app.on_event("startup")
 async def startup_event():
     """
@@ -79,8 +69,6 @@ async def startup_event():
     mcc_data = load_mcc_data()
     print(f"Loaded {len(mcc_data)} MCC entries from mcc.json")
 
-
-# --- API Endpoints ---
 @app.get("/mcc", response_model=List[MccEntry], tags=["MCC"])
 def get_all_mcc_codes():
     """
