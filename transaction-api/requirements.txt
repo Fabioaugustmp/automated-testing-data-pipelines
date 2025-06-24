@@ -18,3 +18,9 @@ python-dotenv==1.0.0
 Werkzeug==3.0.0
 zope.event==5.0
 zope.interface==6.1
+
+pytest
+pytest-asyncio
+faker
+hypothesis
+httpx
