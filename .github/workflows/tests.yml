@@ -47,11 +47,9 @@ jobs:
           pip install -r requirements.txt
 
       - name: ✅ Running tests (transaction-api)
-        working-directory: transaction-api
-        run: |          
-          PYTHONPATH=. pytest -v
-          PYTHONPATH=transaction-api pytest transaction-api/tests -v
-          pytest -v --tb=short || echo "transaction-api tests failed"
+        working-directory: ./transaction-api
+        run: |
+          PYTHONPATH=. pytest -v --tb=short || echo "transaction-api tests failed"
 
       - name: 📊 Run tests with coverage
         working-directory: transaction-api
