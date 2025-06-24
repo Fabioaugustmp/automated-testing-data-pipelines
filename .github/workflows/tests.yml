@@ -3,8 +3,14 @@ name: Run Tests
 on:
   push:
     branches: [main]
+    paths:
+      - "transaction-api/**"
+      - ".github/workflows/**"
   pull_request:
     branches: [main]
+    paths:
+      - "transaction-api/**"
+      - ".github/workflows/**"
 
 jobs:
   test:
