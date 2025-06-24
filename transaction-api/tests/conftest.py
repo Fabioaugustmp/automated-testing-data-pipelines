@@ -1,10 +1,15 @@
+import os
+import sys
 import pytest
+
 from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from app.db.base import Base
 from app.main import app
 from app.db.session import get_db
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 #Tipo de Testes Fixtures e dependências
 
