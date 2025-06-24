@@ -49,7 +49,7 @@ jobs:
       - name: ✅ Running tests (transaction-api)
         working-directory: ./transaction-api
         run: |
-            PYTHONPATH=transaction-api pytest transaction-api/tests -v --tb=short || echo "transaction-api tests failed"
+            PYTHONPATH=. python -m pytest -v --tb=short || echo "transaction-api tests failed"
 
       - name: 📊 Run tests with coverage
         working-directory: transaction-api
