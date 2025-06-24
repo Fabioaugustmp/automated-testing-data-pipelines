@@ -38,7 +38,7 @@ jobs:
       - name: ✅Running tests (mcc-api)
         working-directory: mcc-api
         run: |          
-          pytest -v --tb=short || echo "mcc-api tests failed"
+          PYTHONPATH=. python -m pytest -v --tb=short || echo "mcc-api tests failed"
 
       - name: 📦 Load all required dependencies (transaction-api)
         working-directory: transaction-api
