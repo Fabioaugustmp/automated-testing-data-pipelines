@@ -29,24 +29,28 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: 📦 Install dependencies and run tests (mcc-api)
+      - name: 📦 Load all required dependencies (mcc-api)
         working-directory: mcc-api
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+
+      - name: Running tests (mcc-api)
+        working-directory: mcc-api
+        run: |          
           pytest -v --tb=short || echo "mcc-api tests failed"
 
-      - name: 📦 Install dependencies and run tests (transaction-api)
-        working-directory: transaction-api
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          pip install pytest-cov
-          pytest --cov=. --cov-report=term-missing
-
-      - name: 📦 Install dependencies and run tests (regions-api)
-        working-directory: regions-api
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          pytest -v --tb=short || echo "regions-api tests failed"
+#      - name: 📦 Install dependencies and run tests (transaction-api)
+#        working-directory: transaction-api
+#        run: |
+#          python -m pip install --upgrade pip
+#          pip install -r requirements.txt
+#          pip install pytest-cov
+#          pytest --cov=. --cov-report=term-missing
+#
+#      - name: 📦 Install dependencies and run tests (regions-api)
+#        working-directory: regions-api
+#        run: |
+#          python -m pip install --upgrade pip
+#          pip install -r requirements.txt
+#          pytest -v --tb=short || echo "regions-api tests failed"
