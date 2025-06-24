@@ -6,6 +6,7 @@ from app.schemas.transaction import TransactionCreate, TransactionResponse
 from app.db.session import get_db
 from app.crud.transaction import get_db_transactions, get_db_transactions_by_mcc
 from app.etl.processor import process_and_load_transaction
+from app.etl.processor import process_and_create_transaction_with_mcc_request
 
 router = APIRouter(
     prefix="/transacoes",
@@ -26,6 +27,15 @@ def cadastrar_transacao(
     """
     created_transaction = process_and_load_transaction(db, transaction)
     return created_transaction
+
+@router.post("/with-mcc", response_model=TransactionResponse, status_code=status.HTTP_201_CREATED)
+async def cadastrar_transacao_mcc(
+        transaction: TransactionCreate,
+        db: Session = Depends(get_db)
+):
+    created_transaction = await process_and_create_transaction_with_mcc_request(db, transaction)
+    return created_transaction
+
 
 @router.get("/", response_model=List[TransactionResponse])
 def consultar_transacoes(
