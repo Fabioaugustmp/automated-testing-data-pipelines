@@ -3,7 +3,7 @@ import pytest
 import asyncio
 from unittest.mock import AsyncMock, patch, MagicMock
 from faker import Faker
-from hypothesis import given, strategies as st
+from hypothesis import settings, given, HealthCheck, strategies as st
 
 from fastapi import HTTPException
 
@@ -30,7 +30,7 @@ def mock_db_session():
 
 
 # --- Testa process_and_load_transaction ---
-
+@settings(suppress_health_check=[HealthCheck.function_scoped_fixture])
 @given(
     nome=st.text(min_size=1),
     valor=st.floats(min_value=0.01, max_value=10000, allow_nan=False, allow_infinity=False),
