@@ -132,7 +132,7 @@ async def test_process_and_create_transaction_with_mcc_request_success(fake_tran
             patch('app.etl.processor.process_and_load_transaction',
                   return_value="created_transaction") as mock_process_load:
         result = await processor.process_and_create_transaction_with_mcc_request(mock_db_session, fake_transaction_data)
-        mock_call_mcc.assert_awaited_once_with(fake_transaction_data.mcc)
+        mock_call_mcc.assert_awaited_once_with(mcc=fake_transaction_data.mcc)
         mock_process_load.assert_called_once_with(mock_db_session, fake_transaction_data)
         assert result == "created_transaction"
 
