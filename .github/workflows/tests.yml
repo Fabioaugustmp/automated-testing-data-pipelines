@@ -42,8 +42,7 @@ jobs:
 
       - name: 📊 Run tests with coverage
         working-directory: mcc-api
-        run: | 
-          pip install pytest-cov
+        run: |            
           pytest --cov=. --cov-report=term-missing
 
       - name: 📦 Load all required dependencies (transaction-api)
