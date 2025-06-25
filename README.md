@@ -18,16 +18,6 @@ The application uses **SQLAlchemy** for ORM/database access, **Pydantic** for da
 
 ---
 
-# Automated Testing Data Pipelines
-
-## Overview
-
-This repository demonstrates a robust, test-driven approach to building data pipelines and APIs using FastAPI, SQLAlchemy, and Pydantic. The main focus is on the **Transaction API**, which manages financial transactions and demonstrates ETL (Extract, Transform, Load) patterns, external API integration, and comprehensive automated testing.
-
-The project is designed for maintainability, extensibility, and reliability, with a strong emphasis on automated testing using **pytest** and **hypothesis** for property-based testing.
-
----
-
 ## Main Projects
 
 ### 1. Transaction API (`transaction-api/`)
