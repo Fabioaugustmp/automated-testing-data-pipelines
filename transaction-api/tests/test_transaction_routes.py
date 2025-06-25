@@ -11,7 +11,7 @@ def test_post_transaction(client):
     payload = {
         "nome": fake.company(),
         "mcc": "1234",
-        "valor": 100.50
+        "valor": fake.dollar()
     }
     response = client.post("/transacoes/", json=payload)
     assert response.status_code == 201
