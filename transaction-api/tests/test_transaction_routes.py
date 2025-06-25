@@ -11,7 +11,7 @@ def test_post_transaction(client):
     payload = {
         "nome": fake.company(),
         "mcc": "1234",
-        "valor": 100.50
+        "valor": fake.pyfloat(left_digits=3, right_digits=2, positive=True)
     }
     response = client.post("/transacoes/", json=payload)
     assert response.status_code == 201
@@ -30,17 +30,16 @@ def test_get_transactions_by_mcc(client):
     assert response.status_code == 200
     assert isinstance(response.json(), list)
 
-@pytest.mark.asyncio
+
 @patch("app.etl.processor.call_mcc_api", new_callable=AsyncMock)
-async def test_post_transaction_with_mcc(mock_call_mcc, client):
+def test_post_transaction_with_mcc(mock_call_mcc, client):
     mock_call_mcc.return_value = {"valid": True}
 
     payload = {
         "nome": fake.company(),
         "mcc": "5678",
-        "valor": 200.00
+        "valor": fake.pyfloat(left_digits=3, right_digits=2, positive=True)
     }
 
-    async with client:
-        response = await client.post("/transacoes/with-mcc", json=payload)
-        assert response.status_code == 201
+    response = client.post("/transacoes/with-mcc", json=payload)
+    assert response.status_code == 201

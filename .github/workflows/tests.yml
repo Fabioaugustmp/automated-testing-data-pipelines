@@ -40,6 +40,11 @@ jobs:
         run: |          
           PYTHONPATH=. python -m pytest -v --tb=short || echo "mcc-api tests failed"
 
+      - name: 📊 Run tests with coverage
+        working-directory: mcc-api
+        run: |            
+          pytest --cov=. --cov-report=term-missing
+
       - name: 📦 Load all required dependencies (transaction-api)
         working-directory: transaction-api
         run: |

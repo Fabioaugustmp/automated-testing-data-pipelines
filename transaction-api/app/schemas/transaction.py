@@ -1,11 +1,23 @@
 # app/schemas/transaction.py
 import datetime
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, ConfigDict
 
 class TransactionBase(BaseModel):
-    nome: str = Field(..., example="Restaurante Comida Boa")
-    mcc: str = Field(..., example="5812")
-    valor: float = Field(..., gt=0, example=99.90)
+    nome: str = Field(..., description="Nome da transação")
+    mcc: str = Field(..., description="Código MCC")
+    valor: float = Field(..., gt=0, description="Valor da transação")
+
+    model_config = ConfigDict(
+        json_schema_extra={
+            "examples": [
+                {
+                    "nome": "Restaurante Comida Boa",
+                    "mcc": "5812",
+                    "valor": 99.90
+                }
+            ]
+        }
+    )
 
 class TransactionCreate(TransactionBase):
     pass
@@ -14,5 +26,4 @@ class TransactionResponse(TransactionBase):
     id: int
     data: datetime.datetime
 
-    class Config:
-        orm_mode = True
+    model_config = ConfigDict(from_attributes=True)

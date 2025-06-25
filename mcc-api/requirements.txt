@@ -1,3 +1,5 @@
+httpx
+faker
 fastapi
 uvicorn
 pytest
