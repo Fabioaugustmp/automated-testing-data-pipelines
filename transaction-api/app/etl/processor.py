@@ -37,8 +37,7 @@ async def call_mcc_api(mcc):
     try:
      response = await client.get(f"http://127.0.0.1:8001/mcc/{mcc}")
      response.raise_for_status()
-     data = response.json()
-     return data
+     return response.json()
     except httpx.HTTPStatusError as exc:
      return {"error": f"HTTP error {exc.response.status_code}"}
     except httpx.RequestError as exc:
@@ -47,7 +46,6 @@ async def call_mcc_api(mcc):
         return {"error": f"An unexpected error occurred: {e}"}
 
 async def process_and_create_transaction_with_mcc_request(db: Session, transaction_data: TransactionCreate) -> TransactionResponse:
-
     mcc_response = await call_mcc_api(mcc=transaction_data.mcc)
     if "error" in mcc_response:
         logger.warning(f"MCC inválido ou erro na chamada externa: {mcc_response['error']}")

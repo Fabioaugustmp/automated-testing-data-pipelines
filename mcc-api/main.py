@@ -1,14 +1,27 @@
 import json
 from typing import List, Optional
 from fastapi import FastAPI, HTTPException, status
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, ConfigDict
+from contextlib import asynccontextmanager
+
 
 class MccEntry(BaseModel):
     """
     Pydantic model to define the structure of each MCC entry.
     """
-    code: int = Field(..., example="5812", description="Merchant Category Code")
-    description: str = Field(..., example="Eating Places, Restaurants", description="Description of the MCC")
+    code: int = Field(..., description="Merchant Category Code")
+    description: str = Field(..., description="Description of the MCC")
+
+    model_config = ConfigDict(
+        json_schema_extra={
+            "examples": [
+                {
+                    "code": 5812,
+                    "description": "Eating Places, Restaurants"
+                }
+            ]
+        }
+    )
 
 mcc_data: Optional[List[MccEntry]] = None
 
@@ -53,21 +66,19 @@ def load_mcc_data(file_path: str = "mcc.json") -> List[MccEntry]:
             detail=f"An unexpected error occurred while loading MCC data: {e}"
         )
 
-app = FastAPI(
-    title="MCC Lookup API",
-    description="A simple API to retrieve Merchant Category Codes from a JSON file.",
-    version="1.0.0"
-)
-
-@app.on_event("startup")
-async def startup_event():
-    """
-    Loads MCC data when the FastAPI application starts up.
-    This ensures the data is loaded once and available for all requests.
-    """
+@asynccontextmanager
+async def lifespan(app):
     global mcc_data
     mcc_data = load_mcc_data()
     print(f"Loaded {len(mcc_data)} MCC entries from mcc.json")
+    yield  # Aqui o app está pronto para servir requisições
+
+app = FastAPI(
+    title="MCC Lookup API",
+    description="A simple API to retrieve Merchant Category Codes from a JSON file.",
+    version="1.0.0",
+    lifespan=lifespan
+)
 
 @app.get("/mcc", response_model=List[MccEntry], tags=["MCC"])
 def get_all_mcc_codes():
