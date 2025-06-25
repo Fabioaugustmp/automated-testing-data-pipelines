@@ -19,3 +19,22 @@ def test_post_transaction_hypothesis(client, nome, mcc, valor):
         assert data["nome"] == nome
         assert data["mcc"] == mcc
         assert data["valor"] == valor
+
+def test_get_transactions_returns_list(client):
+    response = client.get("/transacoes/")
+    assert response.status_code == 200
+    assert isinstance(response.json(), list)
+
+@given(
+    nome=st.text(min_size=0, max_size=0),  # Invalid: empty string
+    mcc=st.text(min_size=0, max_size=3),   # Invalid: too short
+    valor=st.floats(max_value=0, allow_nan=False, allow_infinity=False)  # Invalid: zero or negative
+)
+def test_post_transaction_invalid_data(client, nome, mcc, valor):
+    payload = {
+        "nome": nome,
+        "mcc": mcc,
+        "valor": valor
+    }
+    response = client.post("/transacoes/", json=payload)
+    assert response.status_code == 422
